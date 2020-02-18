@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
@@ -14,6 +15,67 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div id="firstImg"><img src="img/ashlmtlogo.jpg" alt="flower bud silhouette in front of fire"></div>
+    <h1>My Resume</h1>
+  </header>
+
+  <section class="content">
+    <section id="about">
+      <h2>About</h2>
+      <p>I am a Full Stack Web Developer. My priorities for my code is to make it accessible, clean, quick, and
+        responsive. I communicate very clearly and work well on a team.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Node</li>
+        <li>Python</li>
+        <li>React</li>
+        <li>Redux</li>
+        <li>SQL</li>
+      </ul>
+    </section>
+
+    <section id="work">
+      <h2>Work</h2>
+      <section class="fake-companies">
+        <h3>Fake Company Number 1</h3>
+        <p>I did stuff from start time to end time.</p>
+        <p>My roles and responsibilities were things and stuff.</p>
+        <h3>Fake Company Number 2</h3>
+        <p>I did stuff from start time to end time.</p>
+        <p>My roles and responsibilities were things and stuff.</p>
+        <h3>Fake Company Number 3</h3>
+        <p>I did stuff from start time to end time.</p>
+        <p>My roles and responsibilities were things and stuff.</p>
+        <h3>Fake Company Number 4</h3>
+        <p>I did stuff from start time to end time.</p>
+        <p>My roles and responsibilities were things and stuff.</p>
+      </section>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <label for="name">Name:</label><input type="text" id="name" name="Name"><br>
+        <label for="email">Email</label><input type="text" id="email" name="Email"><br>
+        <label for="phone">Phone</label><input type="text" id="phone" name="Phone"><br>
+        <label for="message">Message</label><input type="text" id="message" name="Message"><br>
+      </form>
+    </section>
+  </section>
+
 </body>
+
 </html>

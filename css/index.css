@@ -134,3 +134,15 @@ html,
 body {
   height: 100%;
 }
+
+/* Code Start */
+
+header{
+  display: flex;
+  flex-wrap: wrap;
+  
+  .firstImg{
+    
+  }
+ 
+}
