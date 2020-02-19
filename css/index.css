@@ -85,7 +85,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: 1px solid black;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -134,15 +134,15 @@ html,
 body {
   height: 100%;
 }
-
-/* Code Start */
-
-header{
-  display: flex;
-  flex-wrap: wrap;
-  
-  .firstImg{
-    
-  }
- 
+headfont {
+  color: slategrey;
+  font-family: 'Lato', sans-serif;
+}
+#logo {
+  width: 25%;
+  height: 25vh;
+}
+#headshot {
+  width: 25%;
+  height: 35vh;
 }

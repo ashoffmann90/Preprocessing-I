@@ -9,6 +9,8 @@
 
   <link rel="stylesheet" href="css/index.css">
 
+  <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro&display=swap" rel="stylesheet">
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -22,13 +24,14 @@
       <a href="#work">Work</a>
       <a href="#contact">Contact</a>
     </nav>
-    <div id="firstImg"><img src="img/ashlmtlogo.jpg" alt="flower bud silhouette in front of fire"></div>
-    <h1>My Resume</h1>
+    <img src="img/ashlmtlogo.jpg" alt="flower bud silhouette in front of fire" id="logo">
+
   </header>
 
   <section class="content">
     <section id="about">
       <h2>About</h2>
+      <img src="img/propicsm.jpg" alt="Andrew Hoffmann headshot" id="headshot">
       <p>I am a Full Stack Web Developer. My priorities for my code is to make it accessible, clean, quick, and
         responsive. I communicate very clearly and work well on a team.</p>
     </section>
@@ -59,21 +62,19 @@
         <h3>Fake Company Number 3</h3>
         <p>I did stuff from start time to end time.</p>
         <p>My roles and responsibilities were things and stuff.</p>
-        <h3>Fake Company Number 4</h3>
-        <p>I did stuff from start time to end time.</p>
-        <p>My roles and responsibilities were things and stuff.</p>
+        
       </section>
     </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <form>
-        <label for="name">Name:</label><input type="text" id="name" name="Name"><br>
-        <label for="email">Email</label><input type="text" id="email" name="Email"><br>
-        <label for="phone">Phone</label><input type="text" id="phone" name="Phone"><br>
-        <label for="message">Message</label><input type="text" id="message" name="Message"><br>
-      </form>
-    </section>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <label for="name">Name:</label><input type="text" id="name" name="Name"><br>
+      <label for="email">Email</label><input type="text" id="email" name="Email"><br>
+      <label for="phone">Phone</label><input type="text" id="phone" name="Phone"><br>
+      <label for="message">Message</label><input type="text" id="message" name="Message"><br>
+      <input type="submit" value="Submit">
+    </form>
   </section>
 
 </body>
