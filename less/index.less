@@ -65,11 +65,13 @@ html, body {
 // Variables and Mixins
 @backgroundcolor: #fffaf0;
 
-headfont {
+.headfont {
 	color:slategrey;
 	font-family: 'Lato', sans-serif;
 }
  
+// My Code
+
 #logo{
 	width: 25%;
 	height: 25vh;
@@ -79,8 +81,57 @@ headfont {
 	height: 35vh;
 }
 
+header{
+	display: flex;
+
+	nav{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+
+		a{
+			text-decoration: none;
+			.headfont
+		}
+	}
+}
+
+.content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+	#about{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		margin: 5%;
+
+		h2, img, p{
+			margin: 1%;
+		}
+	}
+
+	#skills{
+		width: 75%;
+	}
+
+	li{
+		margin: 1%;
+		height:5vh;
+	}
+
+	#work{
+		text-align: center;
+		width: 75%;
+		margin: 5% 0;
+	}
 
 
+
+}
 
 
 

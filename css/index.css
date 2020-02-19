@@ -134,7 +134,7 @@ html,
 body {
   height: 100%;
 }
-headfont {
+.headfont {
   color: slategrey;
   font-family: 'Lato', sans-serif;
 }
@@ -145,4 +145,47 @@ headfont {
 #headshot {
   width: 25%;
   height: 35vh;
+}
+header {
+  display: flex;
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+header nav a {
+  text-decoration: none;
+  color: slategrey;
+  font-family: 'Lato', sans-serif;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.content #about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5%;
+}
+.content #about h2,
+.content #about img,
+.content #about p {
+  margin: 1%;
+}
+.content #skills {
+  width: 75%;
+}
+.content li {
+  margin: 1%;
+  height: 5vh;
+}
+.content #work {
+  text-align: center;
+  width: 75%;
+  margin: 5% 0;
 }
