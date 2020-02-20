@@ -140,6 +140,12 @@ body {
   background-attachment: fixed;
   margin: 5%;
 }
+body h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3rem;
+  color: black;
+  font-weight: bold;
+}
 @media (min-width: 500px) {
   body {
     margin: 0;
@@ -205,27 +211,43 @@ body .content #about #headshot {
   max-width: 150px;
   max-height: 250px;
 }
+body .content #about p {
+  max-width: 300px;
+  font-size: 1.3rem;
+  color: 'Lato', sans-serif;
+}
 body .content #skills {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 50vh;
+  height: 75vh;
   width: 100%;
 }
-body .content #skills ul {
+body .content #skills div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 85%;
+  height: auto;
   width: 100%;
+  flex-wrap: wrap;
 }
-body .content #skills ul li {
+@media (min-width: 500px) {
+  body .content #skills div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 1.5rem;
+  }
+}
+body .content #skills div p {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  margin: 3%;
 }
 body .content #work {
   display: flex;
