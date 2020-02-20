@@ -1,12 +1,17 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
+
+  <script src="https://kit.fontawesome.com/133f893719.js" crossorigin="anonymous"></script>
 
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +19,72 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="content">
+    <section id="about">
+      <h2>My Resume</h2>
+      <img src="img/propicsm.jpg" alt="Andrew Hoffmann headshot" id="headshot">
+      <p>I am a Full Stack Web Developer. My priorities for my code is to make it accessible, clean, quick, and
+        responsive. I communicate very clearly and work well on a team.</p><br><br>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div>
+        <p><i class="fab fa-html5 fa-3x"></i>HTML</p>
+        <p><i class="fab fa-css3-alt fa-3x"></i>CSS</p>
+        <p><i class="fab fa-js fa-3x"></i>JavaScript</p>
+        <p><i class="fab fa-node fa-3x"></i>Node</p>
+        <p><i class="fab fa-python fa-3x"></i>Python</p>
+        <p><i class="fab fa-react fa-3x"></i>React</p>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2>Work</h2>
+      <table style="width: 100%;">
+        <tr>
+          <th>Company</th>
+          <th>Title</th>
+          <th>Years</th>
+        </tr>
+        <tr>
+          <td>Super Company</td>
+          <td>Super Enigneer</td>
+          <td>99</td>
+        </tr>
+        <tr>
+          <td>Super Company</td>
+          <td>Super Enigneer</td>
+          <td>99</td>
+        </tr>
+        <tr>
+          <td>Super Company</td>
+          <td>Super Enigneer</td>
+          <td>99</td>
+        </tr>
+      </table>
+    </section>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <label for="name">Name:</label><input type="text" id="name" name="Name"><br>
+      <label for="email">Email</label><input type="text" id="email" name="Email"><br>
+      <label for="phone">Phone</label><input type="text" id="phone" name="Phone"><br>
+      <label for="message">Message</label><input type="text" id="message" name="Message"><br>
+      <div id="subbtn"><input type="submit" value="Submit" id="submitbtn"></div>
+    </form>
+  </section>
+
 </body>
+
 </html>

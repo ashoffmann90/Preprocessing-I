@@ -54,6 +54,157 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+}
+
+// Fonts:
+// 		font-family: 'Lato', sans-serif;
+// 		font-family: 'Source Sans Pro', sans-serif;
+
+
+// Variables and Mixins
+@backgroundcolor: linear-gradient(to bottom left, #92A8D1, #F7CAC9);
+
+@link-style: 'Lato', sans-serif;
+
+.flex-col-even-cen(){
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.basic-media(){
+	@media (min-width:500px){
+		margin-left: 26vw;		
+	}
+}
+
+.head-font(){
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 3rem;
+	color: black;
+	font-weight: bold;
+}
+
+
+// My Code
+
+body{
+	background-image: @backgroundcolor;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 5%;
+
+	h2{
+		.head-font();
+	}
+
+	@media(min-width:500px){
+		margin:0;
+	}
+
+	header{
+		@media(min-width:500px){
+			display: flex;
+			flex-direction: column-reverse;
+			justify-content: flex-end;
+			width: 25vw;
+			height: 100vh;
+			position: fixed;
+			z-index:1;
+		}
+		nav{
+			.flex-col-even-cen();
+			height: 25vh;
+
+			@media(min-width:500px){
+				.flex-col-even-cen();
+				width: 100%;
+				height: 100vh - 30vh;
+			}
+
+			a{
+				text-decoration: none;
+				color: darkslategray;
+				font-family: @link-style;
+				border-bottom: 2px solid darkgrey;
+			}
+		}
+	}
+
+	.content{
+		.flex-col-even-cen();
+		.basic-media;
+
+		section{
+			margin:5% 0;
+		}
+
+		#about{
+			.flex-col-even-cen();
+			height: 50vh;
+
+			#headshot{
+				width: 25vw;
+				max-width: 150px;
+				max-height: 250px;
+			}
+
+			p{
+				max-width:300px;
+				font-size: 1.3rem;
+				color: @link-style;
+			}
+		}
+
+		#skills{
+			.flex-col-even-cen();
+			height: 75vh;
+			width: 100%;
+
+			div{
+				.flex-col-even-cen();
+				height: auto;
+				width: 100%;
+				flex-wrap: wrap;
+
+				@media (min-width:500px){
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: space-around;
+					font-size: 1.5rem;
+				}
+
+				p{
+					.flex-col-even-cen();
+					margin: 3%;
+				}
+			}
+		}
+
+		#work{
+			.flex-col-even-cen();
+			height: 50vh;
+			width: 100%;
+			max-width: 500px;
+			max-height: 350px;
+
+			th, td{
+				padding: 5%;
+			}
+
+			tr:nth-child(even){
+				background-color: darkgrey;
+			}
+		}
+	}
+
+	#contact{
+		.flex-col-even-cen();
+		.basic-media();
+		height: 25vh;
+	}
 }
 
